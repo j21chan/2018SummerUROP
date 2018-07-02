@@ -109,5 +109,6 @@ typedef long __PTRDIFF_TYPE__;
 #define noInterrupts() cli()
 
 #include "UCI_ESP8266_Test.ino"
+#include "..\..\..\Documents\Arduino\libraries\ADXL362\examples\ADXL362_SimpleRead\Sparkfun_ADXL362.ino"
 #endif
 #endif

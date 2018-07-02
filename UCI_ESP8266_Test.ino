@@ -30,7 +30,7 @@ void onBeatDetected()
 
 void setup()
 {
-	Serial.begin(115200);
+	Serial.begin(74880);
 
 	// Initialize the PulseOximeter instance and register a beat-detected callback
 	if (pox.begin(PULSEOXIMETER_DEBUGGINGMODE_RAW_VALUES) == false)
@@ -51,6 +51,9 @@ void loop()
 	// Make sure to call update as fast as possible
 	pox.update();
 
+	// read all three axis in burst to ensure all measurements correspond to same sample time
+	xl.readXYZTData(XValue, YValue, ZValue, Temperature);
+
 	// Asynchronously dump heart rate and oxidation levels to the serial
 	// For both, a value of 0 means "invalid"
 	if (millis() - tsLastReport > REPORTING_PERIOD_MS) {
@@ -61,4 +64,17 @@ void loop()
 		Serial.println("%");
 		tsLastReport = millis();
 	}
+
+	// Print ADXL362 Sensor Data
+	Serial.print("XVALUE=");
+	Serial.print(XValue);
+	Serial.print("\tYVALUE=");
+	Serial.print(YValue);
+	Serial.print("\tZVALUE=");
+	Serial.print(ZValue);
+	Serial.print("\tTEMPERATURE=");
+	Serial.println(Temperature);
+	delay(100);                // Arbitrary delay to make serial monitor easier to observe
+
+	Serial.println();
 }

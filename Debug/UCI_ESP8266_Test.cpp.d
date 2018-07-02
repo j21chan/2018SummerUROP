@@ -59,7 +59,8 @@ C:\Users\jc\AppData\Local\Temp\VMBuilds\UCI_ESP8266_Test\esp8266_thingdev\Debug\
  C:\Users\jc\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\cores\esp8266/debug.h \
  C:\Users\jc\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\variants\thing/pins_arduino.h \
  C:\Users\jc\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\variants\thing/../generic/common.h \
- C:\Users\jc\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\Wire/Wire.h \
+ C:\Users\jc\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\SPI/SPI.h \
+ C:\Users\jc\Documents\Arduino\libraries\ADXL362/ADXL362.h \
  C:\Users\jc\Documents\Arduino\libraries\MAX30100lib\src/MAX30100_PulseOximeter.h \
  C:\Users\jc\Documents\Arduino\libraries\MAX30100lib\src/MAX30100.h \
  C:\Users\jc\Documents\Arduino\libraries\MAX30100lib\src/CircularBuffer.h \
@@ -67,6 +68,4 @@ C:\Users\jc\AppData\Local\Temp\VMBuilds\UCI_ESP8266_Test\esp8266_thingdev\Debug\
  C:\Users\jc\Documents\Arduino\libraries\MAX30100lib\src/MAX30100_Registers.h \
  C:\Users\jc\Documents\Arduino\libraries\MAX30100lib\src/MAX30100_BeatDetector.h \
  C:\Users\jc\Documents\Arduino\libraries\MAX30100lib\src/MAX30100_Filters.h \
- C:\Users\jc\Documents\Arduino\libraries\MAX30100lib\src/MAX30100_SpO2Calculator.h \
- C:\Users\jc\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\SPI/SPI.h \
- C:\Users\jc\Documents\Arduino\libraries\ADXL362/ADXL362.h
+ C:\Users\jc\Documents\Arduino\libraries\MAX30100lib\src/MAX30100_SpO2Calculator.h
